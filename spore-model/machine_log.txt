@@ -1,0 +1,382 @@
+Script started at: 2025-03-03 10:25:00 
+
+                Type        Group          
+ Non_spore_forming:109   Length:224        
+ Spore_forming    :115   Class :character  
+                         Mode  :character  
+                Type        Group          
+ Non_spore_forming:109   Length:224        
+ Spore_forming    :115   Class :character  
+                         Mode  :character  
+在 design_sub1 中存在但在 design_sub 中不存在的名称：
+character(0)
+
+Call:
+ randomForest(x = t(otu_sub), y = design_sub$Type, ntree = 2000,      importance = TRUE, proximity = T) 
+               Type of random forest: classification
+                     Number of trees: 2000
+No. of variables tried at each split: 68
+
+        OOB estimate of  error rate: 4.02%
+Confusion matrix:
+                  Non_spore_forming Spore_forming class.error
+Non_spore_forming               103             6  0.05504587
+Spore_forming                     3           112  0.02608696
+      4681       2340       1170        585        293        146         73         37         18          9 
+0.04017857 0.03571429 0.02678571 0.03571429 0.04017857 0.03571429 0.04910714 0.06250000 0.05803571 0.07142857 
+         5          2          1 
+0.09821429 0.12053571 0.12053571 
+          Non_spore_forming Spore_forming MeanDecreaseAccuracy MeanDecreaseGini
+OG0000159       0.006488766  0.0116258042          0.009008312        1.8635534
+OG0000086       0.004664464  0.0073566170          0.006067360        1.2601010
+OG0000038       0.003517917  0.0039111124          0.003722709        0.8981066
+OG0000113       0.003482785  0.0057689191          0.004567385        1.0714278
+OG0001625       0.003333197  0.0044570964          0.003906235        1.2130542
+OG0000169       0.002844917  0.0034441499          0.003116293        0.5940822
+OG0000606       0.002799220  0.0003889172          0.001557585        0.3723142
+OG0000389       0.002728188  0.0046082360          0.003687644        1.1248808
+OG0000053       0.002715023  0.0034012539          0.003042978        0.6409015
+OG0000039       0.002561347  0.0037925841          0.003193804        0.7136792
+                Type        Group          
+ Non_spore_forming:114   Length:217        
+ Spore_forming    :103   Class :character  
+                         Mode  :character  
+                Type        Group          
+ Non_spore_forming:114   Length:217        
+ Spore_forming    :103   Class :character  
+                         Mode  :character  
+                   predicted
+observed            Non_spore_forming Spore_forming
+  Non_spore_forming               104            10
+  Spore_forming                     2           101
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming               103             3
+  Spore_forming                     6           112
+                                          
+               Accuracy : 0.9598          
+                 95% CI : (0.9251, 0.9815)
+    No Information Rate : 0.5134          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9195          
+                                          
+ Mcnemar's Test P-Value : 0.505           
+                                          
+            Sensitivity : 0.9739          
+            Specificity : 0.9450          
+         Pos Pred Value : 0.9492          
+         Neg Pred Value : 0.9717          
+             Prevalence : 0.5134          
+         Detection Rate : 0.5000          
+   Detection Prevalence : 0.5268          
+      Balanced Accuracy : 0.9594          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming               104             2
+  Spore_forming                    10           101
+                                          
+               Accuracy : 0.9447          
+                 95% CI : (0.9054, 0.9711)
+    No Information Rate : 0.5253          
+    P-Value [Acc > NIR] : < 2e-16         
+                                          
+                  Kappa : 0.8895          
+                                          
+ Mcnemar's Test P-Value : 0.04331         
+                                          
+            Sensitivity : 0.9806          
+            Specificity : 0.9123          
+         Pos Pred Value : 0.9099          
+         Neg Pred Value : 0.9811          
+             Prevalence : 0.4747          
+         Detection Rate : 0.4654          
+   Detection Prevalence : 0.5115          
+      Balanced Accuracy : 0.9464          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+[1]  441 4681
+                         Type  Group
+GCF_000237085.1 Spore_forming group1
+GCF_016865425.1 Spore_forming group1
+GCF_018283645.1 Spore_forming group1
+GCF_017573505.1 Spore_forming group1
+GCF_016862015.1 Spore_forming group1
+GCF_018332715.1 Spore_forming group1
+index_group1
+TRUE 
+ 224 
+Group1 样本数： 224 
+character(0)
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming               109             0
+  Spore_forming                     0           115
+                                       
+               Accuracy : 1            
+                 95% CI : (0.9837, 1)  
+    No Information Rate : 0.5134       
+    P-Value [Acc > NIR] : < 2.2e-16    
+                                       
+                  Kappa : 1            
+                                       
+ Mcnemar's Test P-Value : NA           
+                                       
+            Sensitivity : 1.0000       
+            Specificity : 1.0000       
+         Pos Pred Value : 1.0000       
+         Neg Pred Value : 1.0000       
+             Prevalence : 0.5134       
+         Detection Rate : 0.5134       
+   Detection Prevalence : 0.5134       
+      Balanced Accuracy : 1.0000       
+                                       
+       'Positive' Class : Spore_forming
+                                       
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming                74             2
+  Spore_forming                    40           101
+                                          
+               Accuracy : 0.8065          
+                 95% CI : (0.7475, 0.8568)
+    No Information Rate : 0.5253          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.6187          
+                                          
+ Mcnemar's Test P-Value : 1.135e-08       
+                                          
+            Sensitivity : 0.9806          
+            Specificity : 0.6491          
+         Pos Pred Value : 0.7163          
+         Neg Pred Value : 0.9737          
+             Prevalence : 0.4747          
+         Detection Rate : 0.4654          
+   Detection Prevalence : 0.6498          
+      Balanced Accuracy : 0.8149          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming               102             4
+  Spore_forming                     7           111
+                                          
+               Accuracy : 0.9509          
+                 95% CI : (0.9138, 0.9752)
+    No Information Rate : 0.5134          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9016          
+                                          
+ Mcnemar's Test P-Value : 0.5465          
+                                          
+            Sensitivity : 0.9652          
+            Specificity : 0.9358          
+         Pos Pred Value : 0.9407          
+         Neg Pred Value : 0.9623          
+             Prevalence : 0.5134          
+         Detection Rate : 0.4955          
+   Detection Prevalence : 0.5268          
+      Balanced Accuracy : 0.9505          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming                93             2
+  Spore_forming                    21           101
+                                          
+               Accuracy : 0.894           
+                 95% CI : (0.8452, 0.9316)
+    No Information Rate : 0.5253          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7893          
+                                          
+ Mcnemar's Test P-Value : 0.0001746       
+                                          
+            Sensitivity : 0.9806          
+            Specificity : 0.8158          
+         Pos Pred Value : 0.8279          
+         Neg Pred Value : 0.9789          
+             Prevalence : 0.4747          
+         Detection Rate : 0.4654          
+   Detection Prevalence : 0.5622          
+      Balanced Accuracy : 0.8982          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming                97             5
+  Spore_forming                    12           110
+                                          
+               Accuracy : 0.9241          
+                 95% CI : (0.8813, 0.9552)
+    No Information Rate : 0.5134          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8479          
+                                          
+ Mcnemar's Test P-Value : 0.1456          
+                                          
+            Sensitivity : 0.9565          
+            Specificity : 0.8899          
+         Pos Pred Value : 0.9016          
+         Neg Pred Value : 0.9510          
+             Prevalence : 0.5134          
+         Detection Rate : 0.4911          
+   Detection Prevalence : 0.5446          
+      Balanced Accuracy : 0.9232          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming                86             2
+  Spore_forming                    28           101
+                                          
+               Accuracy : 0.8618          
+                 95% CI : (0.8086, 0.9047)
+    No Information Rate : 0.5253          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.7261          
+                                          
+ Mcnemar's Test P-Value : 5.01e-06        
+                                          
+            Sensitivity : 0.9806          
+            Specificity : 0.7544          
+         Pos Pred Value : 0.7829          
+         Neg Pred Value : 0.9773          
+             Prevalence : 0.4747          
+         Detection Rate : 0.4654          
+   Detection Prevalence : 0.5945          
+      Balanced Accuracy : 0.8675          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+          CP nsplit  rel error    xerror       xstd
+1 0.79816514      0 1.00000000 1.0825688 0.06855568
+2 0.05963303      1 0.20183486 0.2018349 0.04086359
+3 0.01000000      3 0.08256881 0.2201835 0.04246881
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming               103             3
+  Spore_forming                     6           112
+                                          
+               Accuracy : 0.9598          
+                 95% CI : (0.9251, 0.9815)
+    No Information Rate : 0.5134          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9195          
+                                          
+ Mcnemar's Test P-Value : 0.505           
+                                          
+            Sensitivity : 0.9739          
+            Specificity : 0.9450          
+         Pos Pred Value : 0.9492          
+         Neg Pred Value : 0.9717          
+             Prevalence : 0.5134          
+         Detection Rate : 0.5000          
+   Detection Prevalence : 0.5268          
+      Balanced Accuracy : 0.9594          
+                                          
+       'Positive' Class : Spore_forming   
+                                          
+Confusion Matrix and Statistics
+
+                   Reference
+Prediction          Non_spore_forming Spore_forming
+  Non_spore_forming                92             3
+  Spore_forming                    22           100
+                                         
+               Accuracy : 0.8848         
+                 95% CI : (0.8346, 0.924)
+    No Information Rate : 0.5253         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.771          
+                                         
+ Mcnemar's Test P-Value : 0.0003182      
+                                         
+            Sensitivity : 0.9709         
+            Specificity : 0.8070         
+         Pos Pred Value : 0.8197         
+         Neg Pred Value : 0.9684         
+             Prevalence : 0.4747         
+         Detection Rate : 0.4608         
+   Detection Prevalence : 0.5622         
+      Balanced Accuracy : 0.8889         
+                                         
+       'Positive' Class : Spore_forming  
+                                         
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+
+Script finished at: 2025-03-03 10:28:15 
