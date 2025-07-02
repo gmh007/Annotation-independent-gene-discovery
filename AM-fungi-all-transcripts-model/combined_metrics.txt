@@ -1,0 +1,6 @@
+Dataset	Model	Accuracy	Precision	Recall	F1_Score	AUC
+Test	CTree	95.71%	96.97%	94.12%	95.52%	0.96
+Test	Decision_tree	95.71%	96.97%	94.12%	95.52%	0.96
+Test	Naive_Bayes	81.43%	72.34%	100.00%	83.95%	0.82
+Test	Random_Forest	94.29%	89.47%	100.00%	94.44%	0.94
+Test	SVM	51.43%	N/A	0.00%	N/A	0.50
