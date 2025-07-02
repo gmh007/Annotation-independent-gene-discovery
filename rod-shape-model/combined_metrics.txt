@@ -1,0 +1,6 @@
+Model	Accuracy	Precision	Recall	F1_Score	AUC
+CTree	84.55%	89.86%	80.36%	84.85%	0.85
+Decision_tree	87.80%	90.00%	87.01%	88.48%	0.88
+Naive_Bayes	78.05%	71.59%	98.19%	82.80%	0.76
+Random_Forest	95.12%	94.93%	96.07%	95.50%	0.95
+SVM	92.52%	92.79%	93.35%	93.07%	0.92

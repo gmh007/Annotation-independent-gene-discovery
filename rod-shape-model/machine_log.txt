@@ -1,0 +1,386 @@
+Script started at: 2025-03-02 22:34:11 
+
+     Type        Group          
+ coccus:854   Length:1853       
+ rod   :999   Class :character  
+              Mode  :character  
+     Type        Group          
+ coccus:854   Length:1853       
+ rod   :999   Class :character  
+              Mode  :character  
+在 design_sub1 中存在但在 design_sub 中不存在的名称：
+character(0)
+
+Call:
+ randomForest(x = t(otu_sub), y = design_sub$Type, ntree = 2000,      importance = TRUE, proximity = T) 
+               Type of random forest: classification
+                     Number of trees: 2000
+No. of variables tried at each split: 102
+
+        OOB estimate of  error rate: 7.88%
+Confusion matrix:
+       coccus rod class.error
+coccus    741 113  0.13231850
+rod        33 966  0.03303303
+     10587       5294       2647       1323        662        331        165         83         41         21 
+0.07879115 0.07717215 0.07609282 0.07609282 0.07447383 0.07933081 0.07825148 0.08958446 0.08850513 0.09174312 
+        10          5          3          1 
+0.10361576 0.13275769 0.16135996 0.20291419 
+               coccus          rod MeanDecreaseAccuracy MeanDecreaseGini
+OG0000459 0.009612754 0.0023722360          0.005698276         7.053246
+OG0000830 0.007479016 0.0009777544          0.003974418         4.537577
+OG0006491 0.006884065 0.0003732901          0.003375137         3.949619
+OG0007630 0.006281273 0.0014664997          0.003672205         3.189017
+OG0000056 0.005335124 0.0048401289          0.005075631         6.320643
+OG0000186 0.005043702 0.0014592891          0.003104188         3.211993
+OG0008805 0.004996720 0.0033225695          0.004098171         6.016859
+OG0000000 0.004739634 0.0010013524          0.002725500         4.703416
+OG0000397 0.004676981 0.0023103382          0.003403407         4.674857
+OG0001601 0.004555277 0.0003039953          0.002268426         1.244778
+     Type        Group          
+ coccus:284   Length:615        
+ rod   :331   Class :character  
+              Mode  :character  
+     Type        Group          
+ coccus:284   Length:615        
+ rod   :331   Class :character  
+              Mode  :character  
+        predicted
+observed coccus rod
+  coccus    267  17
+  rod        13 318
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    741  33
+    rod       113 966
+                                         
+               Accuracy : 0.9212         
+                 95% CI : (0.908, 0.9331)
+    No Information Rate : 0.5391         
+    P-Value [Acc > NIR] : < 2.2e-16      
+                                         
+                  Kappa : 0.8404         
+                                         
+ Mcnemar's Test P-Value : 6.231e-11      
+                                         
+            Sensitivity : 0.9670         
+            Specificity : 0.8677         
+         Pos Pred Value : 0.8953         
+         Neg Pred Value : 0.9574         
+             Prevalence : 0.5391         
+         Detection Rate : 0.5213         
+   Detection Prevalence : 0.5823         
+      Balanced Accuracy : 0.9173         
+                                         
+       'Positive' Class : rod            
+                                         
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    267  13
+    rod        17 318
+                                          
+               Accuracy : 0.9512          
+                 95% CI : (0.9311, 0.9668)
+    No Information Rate : 0.5382          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.9018          
+                                          
+ Mcnemar's Test P-Value : 0.5839          
+                                          
+            Sensitivity : 0.9607          
+            Specificity : 0.9401          
+         Pos Pred Value : 0.9493          
+         Neg Pred Value : 0.9536          
+             Prevalence : 0.5382          
+         Detection Rate : 0.5171          
+   Detection Prevalence : 0.5447          
+      Balanced Accuracy : 0.9504          
+                                          
+       'Positive' Class : rod             
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+[1]  2469 10587
+                              Type  Group
+GCF_001546385.1_ASM154638v1 coccus group1
+GCF_002243035.1_ASM224303v1 coccus group1
+GCF_002243075.1_ASM224307v1 coccus group1
+GCF_002243115.1_ASM224311v1 coccus group1
+GCF_002243135.1_ASM224313v1 coccus group1
+GCF_002243155.1_ASM224315v1 coccus group1
+index_group1
+TRUE 
+1853 
+Group1 样本数： 1853 
+character(0)
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    798  50
+    rod        56 949
+                                          
+               Accuracy : 0.9428          
+                 95% CI : (0.9312, 0.9529)
+    No Information Rate : 0.5391          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8848          
+                                          
+ Mcnemar's Test P-Value : 0.6272          
+                                          
+            Sensitivity : 0.9499          
+            Specificity : 0.9344          
+         Pos Pred Value : 0.9443          
+         Neg Pred Value : 0.9410          
+             Prevalence : 0.5391          
+         Detection Rate : 0.5121          
+   Detection Prevalence : 0.5424          
+      Balanced Accuracy : 0.9422          
+                                          
+       'Positive' Class : rod             
+                                          
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    260  22
+    rod        24 309
+                                          
+               Accuracy : 0.9252          
+                 95% CI : (0.9015, 0.9447)
+    No Information Rate : 0.5382          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.8495          
+                                          
+ Mcnemar's Test P-Value : 0.8828          
+                                          
+            Sensitivity : 0.9335          
+            Specificity : 0.9155          
+         Pos Pred Value : 0.9279          
+         Neg Pred Value : 0.9220          
+             Prevalence : 0.5382          
+         Detection Rate : 0.5024          
+   Detection Prevalence : 0.5415          
+      Balanced Accuracy : 0.9245          
+                                          
+       'Positive' Class : rod             
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    558  10
+    rod       296 989
+                                          
+               Accuracy : 0.8349          
+                 95% CI : (0.8172, 0.8515)
+    No Information Rate : 0.5391          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.6594          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.9900          
+            Specificity : 0.6534          
+         Pos Pred Value : 0.7696          
+         Neg Pred Value : 0.9824          
+             Prevalence : 0.5391          
+         Detection Rate : 0.5337          
+   Detection Prevalence : 0.6935          
+      Balanced Accuracy : 0.8217          
+                                          
+       'Positive' Class : rod             
+                                          
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    155   6
+    rod       129 325
+                                          
+               Accuracy : 0.7805          
+                 95% CI : (0.7457, 0.8126)
+    No Information Rate : 0.5382          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.5444          
+                                          
+ Mcnemar's Test P-Value : < 2.2e-16       
+                                          
+            Sensitivity : 0.9819          
+            Specificity : 0.5458          
+         Pos Pred Value : 0.7159          
+         Neg Pred Value : 0.9627          
+             Prevalence : 0.5382          
+         Detection Rate : 0.5285          
+   Detection Prevalence : 0.7382          
+      Balanced Accuracy : 0.7638          
+                                          
+       'Positive' Class : rod             
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    771 110
+    rod        83 889
+                                         
+               Accuracy : 0.8958         
+                 95% CI : (0.881, 0.9094)
+    No Information Rate : 0.5391         
+    P-Value [Acc > NIR] : < 2e-16        
+                                         
+                  Kappa : 0.7909         
+                                         
+ Mcnemar's Test P-Value : 0.06127        
+                                         
+            Sensitivity : 0.8899         
+            Specificity : 0.9028         
+         Pos Pred Value : 0.9146         
+         Neg Pred Value : 0.8751         
+             Prevalence : 0.5391         
+         Detection Rate : 0.4798         
+   Detection Prevalence : 0.5246         
+      Balanced Accuracy : 0.8964         
+                                         
+       'Positive' Class : rod            
+                                         
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    254  65
+    rod        30 266
+                                          
+               Accuracy : 0.8455          
+                 95% CI : (0.8145, 0.8732)
+    No Information Rate : 0.5382          
+    P-Value [Acc > NIR] : < 2.2e-16       
+                                          
+                  Kappa : 0.6919          
+                                          
+ Mcnemar's Test P-Value : 0.0004861       
+                                          
+            Sensitivity : 0.8036          
+            Specificity : 0.8944          
+         Pos Pred Value : 0.8986          
+         Neg Pred Value : 0.7962          
+             Prevalence : 0.5382          
+         Detection Rate : 0.4325          
+   Detection Prevalence : 0.4813          
+      Balanced Accuracy : 0.8490          
+                                          
+       'Positive' Class : rod             
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+          CP nsplit rel error    xerror       xstd
+1 0.62529274      0 1.0000000 1.0000000 0.02512558
+2 0.04800937      1 0.3747073 0.3747073 0.01905243
+3 0.01932084      2 0.3266979 0.3290398 0.01807939
+4 0.01522248      4 0.2880562 0.3032787 0.01747827
+5 0.01288056      5 0.2728337 0.2985948 0.01736452
+6 0.01014832      7 0.2470726 0.3021077 0.01744997
+7 0.01000000     10 0.2166276 0.2985948 0.01736452
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    755  86
+    rod        99 913
+                                          
+               Accuracy : 0.9002          
+                 95% CI : (0.8856, 0.9134)
+    No Information Rate : 0.5391          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7989          
+                                          
+ Mcnemar's Test P-Value : 0.3776          
+                                          
+            Sensitivity : 0.9139          
+            Specificity : 0.8841          
+         Pos Pred Value : 0.9022          
+         Neg Pred Value : 0.8977          
+             Prevalence : 0.5391          
+         Detection Rate : 0.4927          
+   Detection Prevalence : 0.5461          
+      Balanced Accuracy : 0.8990          
+                                          
+       'Positive' Class : rod             
+                                          
+Confusion Matrix and Statistics
+
+          Reference
+Prediction coccus rod
+    coccus    252  43
+    rod        32 288
+                                          
+               Accuracy : 0.878           
+                 95% CI : (0.8495, 0.9029)
+    No Information Rate : 0.5382          
+    P-Value [Acc > NIR] : <2e-16          
+                                          
+                  Kappa : 0.7553          
+                                          
+ Mcnemar's Test P-Value : 0.2482          
+                                          
+            Sensitivity : 0.8701          
+            Specificity : 0.8873          
+         Pos Pred Value : 0.9000          
+         Neg Pred Value : 0.8542          
+             Prevalence : 0.5382          
+         Detection Rate : 0.4683          
+   Detection Prevalence : 0.5203          
+      Balanced Accuracy : 0.8787          
+                                          
+       'Positive' Class : rod             
+                                          
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+
+Script finished at: 2025-03-03 00:09:59 
