@@ -1,0 +1,381 @@
+Script started at: 2025-02-28 21:40:56 
+
+            Type       Group          
+ non_symbiosis:37   Length:71         
+ symbiosis    :34   Class :character  
+                    Mode  :character  
+            Type       Group          
+ non_symbiosis:37   Length:71         
+ symbiosis    :34   Class :character  
+                    Mode  :character  
+在 design_sub1 中存在但在 design_sub 中不存在的名称：
+character(0)
+
+Call:
+ randomForest(x = t(otu_sub), y = design_sub$Type, ntree = 2000,      importance = TRUE, proximity = T) 
+               Type of random forest: classification
+                     Number of trees: 2000
+No. of variables tried at each split: 113
+
+        OOB estimate of  error rate: 5.63%
+Confusion matrix:
+              non_symbiosis symbiosis class.error
+non_symbiosis            35         2  0.05405405
+symbiosis                 2        32  0.05882353
+     12839       6420       3210       1605        802        401        201 
+0.05633803 0.05633803 0.02816901 0.04225352 0.02816901 0.02816901 0.02816901 
+       100         50         25         13          6          3          1 
+0.02816901 0.01408451 0.01408451 0.01408451 0.02816901 0.02816901 0.02816901 
+          non_symbiosis   symbiosis MeanDecreaseAccuracy MeanDecreaseGini
+OG0009917   0.007530201 0.006713453          0.006868115        0.3922002
+OG0005701   0.006837711 0.009324476          0.007785269        0.5169124
+OG0009020   0.005491714 0.006098754          0.005551499        0.3079460
+OG0000246   0.004336552 0.004573370          0.004384358        0.2717098
+OG0001820   0.003863443 0.004121938          0.003814588        0.2529062
+OG0009525   0.003673760 0.004941222          0.004210493        0.2939844
+OG0009575   0.003666279 0.005689277          0.004372389        0.2703047
+OG0003584   0.003656816 0.003857730          0.003613982        0.2447992
+OG0004194   0.003580789 0.004685428          0.004091400        0.3163536
+OG0004333   0.003531076 0.005855039          0.004543171        0.3029196
+            Type       Group          
+ non_symbiosis:36   Length:70         
+ symbiosis    :34   Class :character  
+                    Mode  :character  
+            Type       Group          
+ non_symbiosis:36   Length:70         
+ symbiosis    :34   Class :character  
+                    Mode  :character  
+               predicted
+observed        non_symbiosis symbiosis
+  non_symbiosis            31         5
+  symbiosis                 0        34
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            35         2
+  symbiosis                 2        32
+                                         
+               Accuracy : 0.9437         
+                 95% CI : (0.862, 0.9844)
+    No Information Rate : 0.5211         
+    P-Value [Acc > NIR] : 5.913e-15      
+                                         
+                  Kappa : 0.8871         
+                                         
+ Mcnemar's Test P-Value : 1              
+                                         
+            Sensitivity : 0.9412         
+            Specificity : 0.9459         
+         Pos Pred Value : 0.9412         
+         Neg Pred Value : 0.9459         
+             Prevalence : 0.4789         
+         Detection Rate : 0.4507         
+   Detection Prevalence : 0.4789         
+      Balanced Accuracy : 0.9436         
+                                         
+       'Positive' Class : symbiosis      
+                                         
+pdf 
+  2 
+pdf 
+  2 
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            31         0
+  symbiosis                 5        34
+                                          
+               Accuracy : 0.9286          
+                 95% CI : (0.8411, 0.9764)
+    No Information Rate : 0.5143          
+    P-Value [Acc > NIR] : 6.008e-14       
+                                          
+                  Kappa : 0.8576          
+                                          
+ Mcnemar's Test P-Value : 0.07364         
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.8611          
+         Pos Pred Value : 0.8718          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.4857          
+         Detection Rate : 0.4857          
+   Detection Prevalence : 0.5571          
+      Balanced Accuracy : 0.9306          
+                                          
+       'Positive' Class : symbiosis       
+                                          
+pdf 
+  2 
+pdf 
+  2 
+[1]   141 12839
+                                  Type  Group
+Cephalotus_follicularis  non_symbiosis group1
+Chlamydomonas_reinhardii non_symbiosis group1
+Isatis_tinctoria         non_symbiosis group1
+Spirodela_polyrhiza      non_symbiosis group1
+Lunaria_annua            non_symbiosis group1
+Diptychocarpus_strictus  non_symbiosis group1
+index_group1
+TRUE 
+  71 
+Group1 样本数： 71 
+character(0)
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            37         0
+  symbiosis                 0        34
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9494, 1)
+    No Information Rate : 0.5211     
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0000     
+            Specificity : 1.0000     
+         Pos Pred Value : 1.0000     
+         Neg Pred Value : 1.0000     
+             Prevalence : 0.4789     
+         Detection Rate : 0.4789     
+   Detection Prevalence : 0.4789     
+      Balanced Accuracy : 1.0000     
+                                     
+       'Positive' Class : symbiosis  
+                                     
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            11         0
+  symbiosis                25        34
+                                          
+               Accuracy : 0.6429          
+                 95% CI : (0.5193, 0.7539)
+    No Information Rate : 0.5143          
+    P-Value [Acc > NIR] : 0.02047         
+                                          
+                  Kappa : 0.2994          
+                                          
+ Mcnemar's Test P-Value : 1.587e-06       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.3056          
+         Pos Pred Value : 0.5763          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.4857          
+         Detection Rate : 0.4857          
+   Detection Prevalence : 0.8429          
+      Balanced Accuracy : 0.6528          
+                                          
+       'Positive' Class : symbiosis       
+                                          
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            28         0
+  symbiosis                 9        34
+                                         
+               Accuracy : 0.8732         
+                 95% CI : (0.773, 0.9404)
+    No Information Rate : 0.5211         
+    P-Value [Acc > NIR] : 3.282e-10      
+                                         
+                  Kappa : 0.7487         
+                                         
+ Mcnemar's Test P-Value : 0.007661       
+                                         
+            Sensitivity : 1.0000         
+            Specificity : 0.7568         
+         Pos Pred Value : 0.7907         
+         Neg Pred Value : 1.0000         
+             Prevalence : 0.4789         
+         Detection Rate : 0.4789         
+   Detection Prevalence : 0.6056         
+      Balanced Accuracy : 0.8784         
+                                         
+       'Positive' Class : symbiosis      
+                                         
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            23         0
+  symbiosis                13        34
+                                          
+               Accuracy : 0.8143          
+                 95% CI : (0.7034, 0.8972)
+    No Information Rate : 0.5143          
+    P-Value [Acc > NIR] : 1.787e-07       
+                                          
+                  Kappa : 0.6322          
+                                          
+ Mcnemar's Test P-Value : 0.0008741       
+                                          
+            Sensitivity : 1.0000          
+            Specificity : 0.6389          
+         Pos Pred Value : 0.7234          
+         Neg Pred Value : 1.0000          
+             Prevalence : 0.4857          
+         Detection Rate : 0.4857          
+   Detection Prevalence : 0.6714          
+      Balanced Accuracy : 0.8194          
+                                          
+       'Positive' Class : symbiosis       
+                                          
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            37         0
+  symbiosis                 0        34
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9494, 1)
+    No Information Rate : 0.5211     
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0000     
+            Specificity : 1.0000     
+         Pos Pred Value : 1.0000     
+         Neg Pred Value : 1.0000     
+             Prevalence : 0.4789     
+         Detection Rate : 0.4789     
+   Detection Prevalence : 0.4789     
+      Balanced Accuracy : 1.0000     
+                                     
+       'Positive' Class : symbiosis  
+                                     
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            35         2
+  symbiosis                 1        32
+                                          
+               Accuracy : 0.9571          
+                 95% CI : (0.8798, 0.9911)
+    No Information Rate : 0.5143          
+    P-Value [Acc > NIR] : 2.942e-16       
+                                          
+                  Kappa : 0.9141          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9412          
+            Specificity : 0.9722          
+         Pos Pred Value : 0.9697          
+         Neg Pred Value : 0.9459          
+             Prevalence : 0.4857          
+         Detection Rate : 0.4571          
+   Detection Prevalence : 0.4714          
+      Balanced Accuracy : 0.9567          
+                                          
+       'Positive' Class : symbiosis       
+                                          
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+    CP nsplit rel error     xerror       xstd
+1 1.00      0         1 1.14705882 0.12331026
+2 0.01      1         0 0.02941176 0.02920391
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            37         0
+  symbiosis                 0        34
+                                     
+               Accuracy : 1          
+                 95% CI : (0.9494, 1)
+    No Information Rate : 0.5211     
+    P-Value [Acc > NIR] : < 2.2e-16  
+                                     
+                  Kappa : 1          
+                                     
+ Mcnemar's Test P-Value : NA         
+                                     
+            Sensitivity : 1.0000     
+            Specificity : 1.0000     
+         Pos Pred Value : 1.0000     
+         Neg Pred Value : 1.0000     
+             Prevalence : 0.4789     
+         Detection Rate : 0.4789     
+   Detection Prevalence : 0.4789     
+      Balanced Accuracy : 1.0000     
+                                     
+       'Positive' Class : symbiosis  
+                                     
+Confusion Matrix and Statistics
+
+               Reference
+Prediction      non_symbiosis symbiosis
+  non_symbiosis            35         2
+  symbiosis                 1        32
+                                          
+               Accuracy : 0.9571          
+                 95% CI : (0.8798, 0.9911)
+    No Information Rate : 0.5143          
+    P-Value [Acc > NIR] : 2.942e-16       
+                                          
+                  Kappa : 0.9141          
+                                          
+ Mcnemar's Test P-Value : 1               
+                                          
+            Sensitivity : 0.9412          
+            Specificity : 0.9722          
+         Pos Pred Value : 0.9697          
+         Neg Pred Value : 0.9459          
+             Prevalence : 0.4857          
+         Detection Rate : 0.4571          
+   Detection Prevalence : 0.4714          
+      Balanced Accuracy : 0.9567          
+                                          
+       'Positive' Class : symbiosis       
+                                          
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+pdf 
+  2 
+
+Script finished at: 2025-02-28 21:49:10 
